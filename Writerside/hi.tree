@@ -4,14 +4,13 @@
 
 <instance-profile id="hi"
                  name="Flosum DevOps Documentation"
-                 start-page="Default-topic.md">
+                 start-page="How-to.md">
 
-    <toc-element topic="Default-topic.md"/>
     <toc-element topic="How-to.md">
-        <toc-element topic="AccelQ-Overview.md"/>
+        <toc-element topic="How-to-use-Accelq.md"/>
+        <toc-element topic="APIs.topic"/>
+        <toc-element topic="Connection.md"/>
+        <toc-element topic="Custom-Objects.md"/>
+        <toc-element topic="AccelQ-Run-Test-Logic.md"/>
     </toc-element>
-    <toc-element topic="Starter.md"/>
-    <toc-element topic="Reference.md"/>
-    <toc-element topic="Overview.md"/>
-    <toc-element topic="Tutorial.md"/>
 </instance-profile>

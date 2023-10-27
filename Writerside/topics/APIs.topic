@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="APIs" title="APIs">
+
+    <title>
+        APIs
+    </title>
+
+    <note>
+        <p>All requests to  AccelQ from the Flosum come exclusively from <emphasis>Apex</emphasis>.</p>
+    </note>
+
+    <table>
+        <tr>
+            <td width="20%">Name</td>
+            <td width="30%">Url</td>
+            <td width="50%">Description</td>
+        </tr>
+        <tr>
+            <td>Test Connection</td>
+            <td>https://{URL}/awb/api/1.0/{TENANT_CODE}/jobs/{JOB_ID}/validate-ci-job</td>
+            <td>We use this endpoint to test the connection. The fact is that AccelQ does not have a special endpoint
+                for connection testing, so we make a job validation request with id ‘1’ if we get a response with status
+                success or the error 'Test Job: 1 is not a Continuous Integration job.' so everything is fine, otherwise
+                we will display an error that Accelq will send us (for example invalid username)
+            </td>
+        </tr>
+        <tr>
+            <td>Trigger Job</td>
+            <td>https://{URL}/awb/api/1.0/{TENANT_CODE}/jobs/{JOB_ID}/trigger-ci-job</td>
+            <td>We use this endpoint to run some kind of AccelQ test.</td>
+        </tr>
+        <tr>
+            <td>Get Job Result</td>
+            <td>https://{URL}/awb/api/1.0/{TENANT_CODE}/runs/{JOB_ID}</td>
+            <td>We use this endpoint for two purposes. 1. To check if the test has been completed. 2. To get the test
+                results.
+            </td>
+        </tr>
+    </table>
+</topic>

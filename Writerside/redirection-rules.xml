@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="22679df">
+        <description>Created after removal of "AccelQ How To Use" from Flosum DevOps Documentation</description>
+        <accepts>AccelQ-Overview.html</accepts>
+    </rule>
+    <rule id="776ddd2b">
+        <description>Created after removal of "Starter" from Flosum DevOps Documentation</description>
+        <accepts>Starter.html</accepts>
+    </rule>
+    <rule id="3845be8f">
+        <description>Created after removal of "Flosum Documentation" from Flosum DevOps Documentation</description>
+        <accepts>Default-topic.html</accepts>
+    </rule>
+</rules>
